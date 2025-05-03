@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🛒 Fake Store</h1>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Поиск товара..." />
+
+    <select id="categorySelect">
+      <option value="all">Все категории</option>
+      <option value="jewelery">💍 Кольца</option>
+      <option value="men's clothing">👕 Мужская одежда</option>
+      <option value="women's clothing">👗 Женская одежда</option>
+      <option value="electronics">💻 Электроника</option>
+    </select>
+
+    <select id="sortSelect">
+      <option value="default">Без сортировки</option>
+      <option value="cheap">Сначала дешёвые</option>
+      <option value="expensive">Сначала дорогие</option>
+    </select>
+  </div>
+
+  <div class="product-container" id="product-list"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
